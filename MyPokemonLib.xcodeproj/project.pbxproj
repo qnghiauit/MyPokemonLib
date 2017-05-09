@@ -12,6 +12,7 @@
 		DF359D071EC2316700D46CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF359D051EC2316700D46CFE /* Main.storyboard */; };
 		DF359D091EC2316700D46CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF359D081EC2316700D46CFE /* Assets.xcassets */; };
 		DF359D0C1EC2316700D46CFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF359D0A1EC2316700D46CFE /* LaunchScreen.storyboard */; };
+		DF359D141EC2336B00D46CFE /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = DF359D131EC2336B00D46CFE /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DF359D081EC2316700D46CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF359D0B1EC2316700D46CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF359D0D1EC2316700D46CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF359D131EC2336B00D46CFE /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				DF359D031EC2316700D46CFE /* ViewController.swift */,
 				DF359D051EC2316700D46CFE /* Main.storyboard */,
 				DF359D081EC2316700D46CFE /* Assets.xcassets */,
+				DF359D131EC2336B00D46CFE /* pokemon.csv */,
 				DF359D0A1EC2316700D46CFE /* LaunchScreen.storyboard */,
 				DF359D0D1EC2316700D46CFE /* Info.plist */,
 			);
@@ -126,6 +129,7 @@
 			files = (
 				DF359D0C1EC2316700D46CFE /* LaunchScreen.storyboard in Resources */,
 				DF359D091EC2316700D46CFE /* Assets.xcassets in Resources */,
+				DF359D141EC2336B00D46CFE /* pokemon.csv in Resources */,
 				DF359D071EC2316700D46CFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
