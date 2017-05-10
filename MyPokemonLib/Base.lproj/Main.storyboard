@@ -122,10 +122,13 @@
                             <constraint firstAttribute="trailing" secondItem="0n1-qo-P4D" secondAttribute="trailing" id="l9h-yX-e97"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clPokes" destination="3lQ-bg-M3p" id="4rw-J4-B6S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="92" y="2"/>
         </scene>
     </scenes>
     <resources>

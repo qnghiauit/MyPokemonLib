@@ -16,6 +16,7 @@
 		DF359D171EC2344800D46CFE /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF359D161EC2344800D46CFE /* Pokemon.swift */; };
 		DF359D1A1EC2388B00D46CFE /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF359D191EC2388B00D46CFE /* music.mp3 */; };
 		DF359D201EC23C9700D46CFE /* PokeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF359D1F1EC23C9700D46CFE /* PokeCollectionViewCell.swift */; };
+		DF552E281EC37C5B00EB1013 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF552E271EC37C5B00EB1013 /* csv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DF359D191EC2388B00D46CFE /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		DF359D1D1EC23A4600D46CFE /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
 		DF359D1F1EC23C9700D46CFE /* PokeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF552E271EC37C5B00EB1013 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +66,11 @@
 		DF359D001EC2316700D46CFE /* MyPokemonLib */ = {
 			isa = PBXGroup;
 			children = (
+				DF552E291EC37C7900EB1013 /* Utils */,
 				DF359D1E1EC23C6700D46CFE /* Cell */,
 				DF359D1C1EC238E400D46CFE /* Controller */,
-				DF359D1B1EC238C600D46CFE /* Resource */,
 				DF359D151EC2342100D46CFE /* Model */,
+				DF359D1B1EC238C600D46CFE /* Resource */,
 				DF359D051EC2316700D46CFE /* Main.storyboard */,
 				DF359D0A1EC2316700D46CFE /* LaunchScreen.storyboard */,
 				DF359D081EC2316700D46CFE /* Assets.xcassets */,
@@ -112,6 +115,14 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		DF552E291EC37C7900EB1013 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF552E271EC37C5B00EB1013 /* csv.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +156,7 @@
 					DF359CFD1EC2316700D46CFE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 9R6APF66GF;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -191,6 +203,7 @@
 				DF359D201EC23C9700D46CFE /* PokeCollectionViewCell.swift in Sources */,
 				DF359D021EC2316700D46CFE /* AppDelegate.swift in Sources */,
 				DF359D171EC2344800D46CFE /* Pokemon.swift in Sources */,
+				DF552E281EC37C5B00EB1013 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +365,7 @@
 				DF359D121EC2316700D46CFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

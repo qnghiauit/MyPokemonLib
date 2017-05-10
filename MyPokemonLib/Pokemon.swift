@@ -9,18 +9,30 @@
 import Foundation
 
 class Pokemon {
-    private var _name : String!
-    private var _id : Int!
+    fileprivate var _name : String!
+    fileprivate var _id : Int!
     
     var name : String {
-        return _name
+        get {
+            return _name
+        }
+        set(value) {
+            _name = value
+        }
     }
     var id : Int {
-        return _id
+        get {
+            return _id
+        }
+        set(value) {
+            _id = value
+        }
     }
     
     init(name: String, id: Int) {
         self._name = name
         self._id = id
     }
+    
+    init() { }
 }
