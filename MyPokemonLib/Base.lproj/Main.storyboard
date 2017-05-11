@@ -12,6 +12,9 @@
         <array key="SF-UI-Text-Regular.otf">
             <string>SFUIText-Regular</string>
         </array>
+        <array key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Main View Controller-->
@@ -28,9 +31,32 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvg-Ff-FZK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-hY-Uht">
+                                        <rect key="frame" x="97.5" y="24" width="179" height="31"/>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNz-Ws-Us0">
+                                        <rect key="frame" x="341" y="31" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="Q3B-2E-oTB"/>
+                                            <constraint firstAttribute="height" constant="26" id="qDM-1z-ffv"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="btnMusicPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gp9-HC-hfN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fNz-Ws-Us0" secondAttribute="trailing" constant="8" id="Dld-9v-AWL"/>
+                                    <constraint firstAttribute="bottom" secondItem="fNz-Ws-Us0" secondAttribute="bottom" constant="8" id="Wdo-P6-aTQ"/>
                                     <constraint firstAttribute="height" constant="65" id="g34-KR-GHt"/>
+                                    <constraint firstItem="rjt-hY-Uht" firstAttribute="centerX" secondItem="dvg-Ff-FZK" secondAttribute="centerX" id="pTz-bt-50s"/>
+                                    <constraint firstAttribute="bottom" secondItem="rjt-hY-Uht" secondAttribute="bottom" constant="10" id="qMa-L2-xX5"/>
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="vet-Q3-uAX">
@@ -134,5 +160,6 @@
     <resources>
         <image name="4" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music" width="100" height="100"/>
     </resources>
 </document>
