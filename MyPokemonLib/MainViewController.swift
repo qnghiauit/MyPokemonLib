@@ -95,7 +95,14 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //
+        var pokemon : Pokemon
+        if isSearchMode {
+            pokemon = filterPokemos[indexPath.row]
+        } else {
+            pokemon = pokemons[indexPath.row]
+        }
+        
+        self.performSegue(withIdentifier: "ShowDetailViewSegue", sender: pokemon)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -126,6 +133,17 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             musicPlayer.play()
             (sender as! UIButton).alpha = 1.0
         }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetailViewSegue" {
+            if let detailViewController = segue.destination as? DetailViewController {
+                if let pokemon = sender as? Pokemon {
+                    detailViewController.pokemon = pokemon
+                }
+            }
+        }
+        
+        
     }
     
 }
