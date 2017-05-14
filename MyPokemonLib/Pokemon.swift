@@ -9,34 +9,21 @@
 import Foundation
 
 class Pokemon {
-    private var _name : String!
-    private var _id : Int!
-    private var _type : String!
-    private var _defense : Int!
-    private var _height : Int!
-    private var weight : Int!
-    private var _attack : Int!
-    
-    var name : String {
-        get {
-            return _name
-        }
-        set(value) {
-            _name = value
-        }
-    }
-    var id : Int {
-        get {
-            return _id
-        }
-        set(value) {
-            _id = value
-        }
-    }
+    var name : String!
+    var id : Int!
+    var type : String!
+    var defense : Int!
+    var height : Int!
+    var weight : Int!
+    var attack : Int!
+    var description : String!
+    var nextEvolutionName : String!
+    var nextEvolutionLevel : Int!
+    var nextEvolutionId : Int!
     
     init(name: String, id: Int) {
-        self._name = name
-        self._id = id
+        self.name = name
+        self.id = id
     }
     
     init() { }

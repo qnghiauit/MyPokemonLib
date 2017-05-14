@@ -22,6 +22,6 @@ class PokeCollectionViewCell: UICollectionViewCell {
     func fillData(_ pokemon: Pokemon) {
         self.pokemon = pokemon
         lbName.text = pokemon.name.capitalized
-        self.imgThumbail.image = UIImage(named: "\(self.pokemon.id)")
+        self.imgThumbail.image = UIImage(named: "\(self.pokemon.id!)")
     }
 }
