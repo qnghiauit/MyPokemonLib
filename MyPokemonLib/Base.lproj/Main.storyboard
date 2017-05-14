@@ -179,18 +179,21 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pikachu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA3-yt-pb5">
-                                        <rect key="frame" x="147" y="28.5" width="82" height="26.5"/>
+                                        <rect key="frame" x="147" y="29" width="82" height="26"/>
                                         <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNN-yX-fFC">
-                                        <rect key="frame" x="8" y="29.5" width="25" height="25"/>
+                                        <rect key="frame" x="8" y="30" width="25" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Oyp-QD-ArQ"/>
                                             <constraint firstAttribute="width" constant="25" id="fDX-wP-748"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="PW5-WG-UQs" eventType="touchUpInside" id="aGr-3g-5H1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -300,8 +303,8 @@ and easily accessible through a modern RESTful API</string>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK0-nM-pgG">
-                                                <rect key="frame" x="0.0" y="31" width="94" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK0-nM-pgG">
+                                                <rect key="frame" x="0.0" y="31" width="98.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -313,7 +316,7 @@ and easily accessible through a modern RESTful API</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKe-GE-jC6">
-                                                <rect key="frame" x="99" y="31.5" width="9" height="19"/>
+                                                <rect key="frame" x="103.5" y="31.5" width="9" height="19"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -449,10 +452,23 @@ and easily accessible through a modern RESTful API</string>
                             <constraint firstItem="Gc0-jD-ycg" firstAttribute="leading" secondItem="tU8-qU-8kp" secondAttribute="leading" id="z8z-yM-UYq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgNextLevel1" destination="mWM-91-OQn" id="kE6-D2-o4g"/>
+                        <outlet property="imgNextLevel2" destination="fdL-di-kRa" id="4vc-KJ-ayC"/>
+                        <outlet property="imgPokemon" destination="zGW-NM-8om" id="9Qj-qg-QAG"/>
+                        <outlet property="lbAttack" destination="ZjR-yM-wWB" id="uu4-6l-scF"/>
+                        <outlet property="lbDefence" destination="Ch5-Dm-USV" id="jBx-zy-mwi"/>
+                        <outlet property="lbDescription" destination="bO1-nD-Jh8" id="gBy-xg-ktC"/>
+                        <outlet property="lbEvolution" destination="AyT-M1-rhZ" id="bcP-rh-VbJ"/>
+                        <outlet property="lbHeight" destination="zUK-d9-JIC" id="PRN-tu-RvV"/>
+                        <outlet property="lbPokeID" destination="yKe-GE-jC6" id="lRb-Xy-fIT"/>
+                        <outlet property="lbType" destination="ckf-kx-uCK" id="fhr-XK-S0m"/>
+                        <outlet property="lbWeight" destination="qKo-6x-2qo" id="eKO-42-zlx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LxA-op-lNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-112.5" y="-150"/>
+            <point key="canvasLocation" x="114" y="-150"/>
         </scene>
     </scenes>
     <resources>
