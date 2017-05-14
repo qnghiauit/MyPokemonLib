@@ -1,0 +1,6 @@
+framework module Pods_MyPokemonLib {
+  umbrella header "Pods-MyPokemonLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

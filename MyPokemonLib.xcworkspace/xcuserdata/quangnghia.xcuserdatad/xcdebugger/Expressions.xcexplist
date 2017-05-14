@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "DetailViewController.(downloadPokeData() -&gt; ()).(closure #1):DetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.pokemon">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

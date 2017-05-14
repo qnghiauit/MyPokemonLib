@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-hY-Uht">
-                                        <rect key="frame" x="98" y="24" width="179" height="31"/>
+                                        <rect key="frame" x="98.5" y="24" width="179" height="31"/>
                                         <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -213,17 +213,15 @@
                                 </segments>
                                 <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="zGW-NM-8om">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zGW-NM-8om">
                                 <rect key="frame" x="8" y="111" width="125" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="KEC-Ew-d2L"/>
                                     <constraint firstAttribute="width" constant="125" id="UYw-cI-1rd"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-nD-Jh8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-nD-Jh8">
                                 <rect key="frame" x="143" y="111" width="224" height="125"/>
-                                <string key="text">all the Pokémon data you'll ever need, in one place,
-and easily accessible through a modern RESTful API</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -240,8 +238,8 @@ and easily accessible through a modern RESTful API</string>
                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poison/Grass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckf-kx-uCK">
-                                                <rect key="frame" x="47.5" y="1" width="97" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckf-kx-uCK">
+                                                <rect key="frame" x="47.5" y="10.5" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -258,14 +256,14 @@ and easily accessible through a modern RESTful API</string>
                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUK-d9-JIC">
-                                                <rect key="frame" x="59.5" y="31" width="18" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUK-d9-JIC">
+                                                <rect key="frame" x="59.5" y="40.5" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKo-6x-2qo">
-                                                <rect key="frame" x="62" y="61" width="27" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKo-6x-2qo">
+                                                <rect key="frame" x="62" y="70.5" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -297,8 +295,8 @@ and easily accessible through a modern RESTful API</string>
                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="63" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ch5-Dm-USV">
-                                                <rect key="frame" x="76.5" y="1" width="18" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ch5-Dm-USV">
+                                                <rect key="frame" x="76.5" y="10.5" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -315,14 +313,14 @@ and easily accessible through a modern RESTful API</string>
                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKe-GE-jC6">
-                                                <rect key="frame" x="103.5" y="31.5" width="9" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKe-GE-jC6">
+                                                <rect key="frame" x="103.5" y="41" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjR-yM-wWB">
-                                                <rect key="frame" x="102" y="61" width="18" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjR-yM-wWB">
+                                                <rect key="frame" x="102" y="70.5" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -361,11 +359,11 @@ and easily accessible through a modern RESTful API</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-jD-ycg">
                                 <rect key="frame" x="0.0" y="477" width="375" height="190"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZF-tS-ZNS">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="190"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WZF-tS-ZNS">
+                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="190"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="mWM-91-OQn">
-                                                <rect key="frame" x="34.5" y="35" width="120" height="120"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mWM-91-OQn">
+                                                <rect key="frame" x="38.5" y="35" width="120.5" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="10r-nc-TuV"/>
                                                     <constraint firstAttribute="width" constant="120" id="gbr-PC-mid"/>
@@ -381,8 +379,8 @@ and easily accessible through a modern RESTful API</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KeQ-7I-3O2">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="190"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="fdL-di-kRa">
-                                                <rect key="frame" x="34.5" y="35" width="120" height="120"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fdL-di-kRa">
+                                                <rect key="frame" x="34" y="35" width="120" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="4yb-08-OPP"/>
                                                     <constraint firstAttribute="height" constant="120" id="uxS-A8-3rV"/>
@@ -400,11 +398,11 @@ and easily accessible through a modern RESTful API</string>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="KeQ-7I-3O2" secondAttribute="trailing" id="4e4-M9-cAF"/>
                                     <constraint firstAttribute="height" constant="190" id="AaD-rQ-iFD"/>
+                                    <constraint firstItem="KeQ-7I-3O2" firstAttribute="leading" secondItem="WZF-tS-ZNS" secondAttribute="trailing" id="BRY-qQ-AGH"/>
                                     <constraint firstItem="KeQ-7I-3O2" firstAttribute="width" secondItem="Gc0-jD-ycg" secondAttribute="width" multiplier="1:2" id="IW1-MF-L09"/>
                                     <constraint firstAttribute="bottom" secondItem="WZF-tS-ZNS" secondAttribute="bottom" id="JWx-Tx-DTs"/>
                                     <constraint firstItem="KeQ-7I-3O2" firstAttribute="top" secondItem="Gc0-jD-ycg" secondAttribute="top" id="XNQ-0h-fRL"/>
                                     <constraint firstAttribute="bottom" secondItem="KeQ-7I-3O2" secondAttribute="bottom" id="ZsG-GB-75n"/>
-                                    <constraint firstItem="WZF-tS-ZNS" firstAttribute="width" secondItem="Gc0-jD-ycg" secondAttribute="width" multiplier="1:2" id="kgM-BD-Bob"/>
                                     <constraint firstItem="WZF-tS-ZNS" firstAttribute="top" secondItem="Gc0-jD-ycg" secondAttribute="top" id="lKT-ww-Pfx"/>
                                     <constraint firstItem="WZF-tS-ZNS" firstAttribute="leading" secondItem="Gc0-jD-ycg" secondAttribute="leading" id="mnb-Mi-fgT"/>
                                 </constraints>
@@ -412,8 +410,8 @@ and easily accessible through a modern RESTful API</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeJ-vx-6Lb">
                                 <rect key="frame" x="0.0" y="437" width="375" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution: Venusaur LVL 32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyT-M1-rhZ">
-                                        <rect key="frame" x="65" y="10.5" width="245" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyT-M1-rhZ">
+                                        <rect key="frame" x="130.5" y="10.5" width="114.5" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -453,6 +451,7 @@ and easily accessible through a modern RESTful API</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ctsWidthImageNextEvo" destination="IW1-MF-L09" id="0uL-PZ-l2y"/>
                         <outlet property="imgNextLevel1" destination="mWM-91-OQn" id="kE6-D2-o4g"/>
                         <outlet property="imgNextLevel2" destination="fdL-di-kRa" id="4vc-KJ-ayC"/>
                         <outlet property="imgPokemon" destination="zGW-NM-8om" id="9Qj-qg-QAG"/>
@@ -461,9 +460,11 @@ and easily accessible through a modern RESTful API</string>
                         <outlet property="lbDescription" destination="bO1-nD-Jh8" id="gBy-xg-ktC"/>
                         <outlet property="lbEvolution" destination="AyT-M1-rhZ" id="bcP-rh-VbJ"/>
                         <outlet property="lbHeight" destination="zUK-d9-JIC" id="PRN-tu-RvV"/>
+                        <outlet property="lbName" destination="zA3-yt-pb5" id="IsW-CA-501"/>
                         <outlet property="lbPokeID" destination="yKe-GE-jC6" id="lRb-Xy-fIT"/>
                         <outlet property="lbType" destination="ckf-kx-uCK" id="fhr-XK-S0m"/>
                         <outlet property="lbWeight" destination="qKo-6x-2qo" id="eKO-42-zlx"/>
+                        <outlet property="vImgNextEvo" destination="KeQ-7I-3O2" id="HWl-Ly-4b2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LxA-op-lNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -472,9 +473,6 @@ and easily accessible through a modern RESTful API</string>
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="120" height="120"/>
-        <image name="2" width="120" height="120"/>
-        <image name="3" width="120" height="120"/>
         <image name="4" width="120" height="120"/>
         <image name="back" width="13" height="22"/>
         <image name="bg" width="1920" height="1200"/>

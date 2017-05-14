@@ -60,7 +60,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 }
                 pokemons.append(pokemon)
             }
-            pokemons.sort(by: {$0.name < $1.name})
+            pokemons.sort(by: {$0.id < $1.id})
         } catch let err as NSError {
             print(err.debugDescription)
         }
