@@ -35,9 +35,14 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         do {
             if let path = Bundle.main.path(forResource: "music", ofType: "mp3") {
                 musicPlayer = try AVAudioPlayer(contentsOf: URL(string: path)!)
-                musicPlayer.prepareToPlay()
+                
                 musicPlayer.numberOfLoops = -1
-                // musicPlayer.play()
+                
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+                try AVAudioSession.sharedInstance().setActive(true)
+                
+                musicPlayer.prepareToPlay()
+                musicPlayer.play()
             }
             
         } catch let err as NSError {

@@ -25,6 +25,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var lbEvolution: UILabel!
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var ctsWidthImageNextEvo: NSLayoutConstraint!
+    @IBOutlet weak var vImgNextEvo: UIView!
     
     var pokemon: Pokemon!
     
@@ -37,7 +38,29 @@ class DetailViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBOutlet weak var vImgNextEvo: UIView!
+    func reloadUI() {
+        self.lbName.text = pokemon.name!
+        self.lbType.text = pokemon.type!
+        self.lbDefence.text = "\(pokemon.defense!)"
+        self.lbHeight.text = "\(pokemon.height!)"
+        self.lbPokeID.text = "\(pokemon.id!)"
+        self.lbWeight.text = "\(pokemon.weight!)"
+        self.lbAttack.text = "\(pokemon.attack!)"
+        
+        let currentLevelImg = UIImage(named: "\(pokemon.id!)")
+        self.imgPokemon.image = currentLevelImg
+        self.imgNextLevel1.image = currentLevelImg
+        
+        if self.pokemon.nextEvolutionId != nil {
+            self.lbEvolution.text = "Next Evolution: \(pokemon.nextEvolutionName!) Lv. \(pokemon.nextEvolutionLevel!)"
+            self.imgNextLevel2.image = UIImage(named: "\(pokemon.nextEvolutionId!)")
+        } else {
+            self.lbEvolution.text = "Next Evolution: None"
+            self.imgNextLevel2.isHidden = true
+        }
+
+    }
+    
     func downloadPokeData() {
         let ApiUrl = "http://pokeapi.co/api/v1/pokemon/\(pokemon.id!)/"
         print(ApiUrl)
@@ -106,28 +129,7 @@ class DetailViewController: UIViewController {
                     }
                 }
             }
-            self.lbName.text = self.pokemon.name!
-            
-            self.lbType.text = self.pokemon.type!
-            self.lbDefence.text = "\(self.pokemon.defense!)"
-            self.lbHeight.text = "\(self.pokemon.height!)"
-            self.lbPokeID.text = "\(self.pokemon.id!)"
-            self.lbWeight.text = "\(self.pokemon.weight!)"
-            self.lbAttack.text = "\(self.pokemon.attack!)"
-            
-            let currentLevelImg = UIImage(named: "\(self.pokemon.id!)")
-            self.imgPokemon.image = currentLevelImg
-            self.imgNextLevel1.image = currentLevelImg
-            if self.pokemon.nextEvolutionId != nil {
-                self.lbEvolution.text = "Next Evolution: \(self.pokemon.nextEvolutionName!) Lv. \(self.pokemon.nextEvolutionLevel!)"
-                self.imgNextLevel2.image = UIImage(named: "\(self.pokemon.nextEvolutionId!)")
-            } else {
-                self.lbEvolution.text = "Next Evolution: None"
-                self.imgNextLevel2.isHidden = true
-                self.ctsWidthImageNextEvo.constant = 0
-                self.vImgNextEvo.layer.layoutIfNeeded()
-            }
-            
+            self.reloadUI()
         }
     }
     
