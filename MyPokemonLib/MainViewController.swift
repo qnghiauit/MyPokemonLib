@@ -35,12 +35,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         do {
             if let path = Bundle.main.path(forResource: "music", ofType: "mp3") {
                 musicPlayer = try AVAudioPlayer(contentsOf: URL(string: path)!)
-                
                 musicPlayer.numberOfLoops = -1
-                
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
-                try AVAudioSession.sharedInstance().setActive(true)
-                
                 musicPlayer.prepareToPlay()
                 musicPlayer.play()
             }
@@ -139,6 +134,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             (sender as! UIButton).alpha = 1.0
         }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetailViewSegue" {
             if let detailViewController = segue.destination as? DetailViewController {
@@ -147,8 +143,6 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 }
             }
         }
-        
-        
     }
     
 }

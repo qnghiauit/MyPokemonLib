@@ -14,8 +14,8 @@ class PokeCollectionViewCell: UICollectionViewCell {
     
     var pokemon: Pokemon!
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override func awakeFromNib() {
+        super.awakeFromNib()
         layer.cornerRadius = 5.0
     }
     
